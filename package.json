@@ -5,7 +5,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development"
+    "watch": "ng build --watch --configuration development",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage"
   },
   "prettier": {
     "printWidth": 100,
@@ -35,8 +38,11 @@
     "@angular/build": "^21.1.3",
     "@angular/cli": "^21.1.3",
     "@angular/compiler-cli": "^21.1.0",
+    "@angular/platform-browser-dynamic": "^21.1.0",
+    "@vitest/ui": "^0.34.0",
     "jsdom": "^27.1.0",
     "typescript": "~5.9.2",
-    "vitest": "^4.0.8"
+    "vitest": "^4.0.8",
+    "zone.js": "^0.15.0"
   }
 }
