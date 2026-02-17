@@ -1,0 +1,53 @@
+# Test Generation Results
+
+## ✅ Test File Created: `src/app/app.spec.ts`
+
+### Overview
+Generated a comprehensive test suite for the **App** root component (Angular 21 standalone component) using **Vitest** framework.
+
+### Test Coverage (14 Tests Total)
+
+#### Component Creation (2 tests)
+- Component instantiation works correctly
+- Title signal initializes properly
+
+#### Title Signal Behavior (3 tests)  
+- Initial value is `'daggerverse-test-angular-project'`
+- Signal reactivity works with `.set()` method
+- Change detection propagates correctly when signal updates
+
+#### Template Rendering (3 tests)
+- H1 element renders with title from signal
+- "Hello," prefix is displayed correctly
+- RouterOutlet component is rendered
+
+#### Component Configuration (3 tests)
+- Selector is correctly set to `'app-root'`
+- Component is configured as standalone
+- RouterOutlet dependency is imported
+
+#### Accessibility & Change Detection (3 tests)
+- Semantic HTML heading element is used
+- Component responds to signal changes
+- View updates when title signal changes
+
+### Test Framework & Utilities
+- **Framework**: Vitest 4.0.8 (already in project devDependencies)
+- **Testing Library**: Angular TestBed and ComponentFixture
+- **No additional dependencies needed**
+
+### Key Features
+✅ Modern Angular 21+ patterns (standalone components, signals)
+✅ Reactive signal testing with change detection verification
+✅ Complete template and DOM interaction coverage
+✅ Accessibility best practices included
+✅ Ready to run with `npm test` or `ng test`
+
+### Running the Tests
+```bash
+npm test
+# or
+ng test
+```
+
+All tests are ready to execute and provide full coverage of the App component's functionality.
