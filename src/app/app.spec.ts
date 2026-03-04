@@ -1,0 +1,19 @@
+import { TestBed } from '@angular/core/testing';
+import { App } from './app';
+import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+
+describe('App', () => {
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [App, RouterOutlet],
+    }).compileComponents();
+  });
+
+  it('should render title', () => {
+    const fixture = TestBed.createComponent(App);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, daggerverse-test-angular-project');
+  });
+});
