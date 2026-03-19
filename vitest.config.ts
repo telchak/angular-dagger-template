@@ -1,0 +1,1 @@
+import { defineConfig } from 'vitest/config';\n\nexport default defineConfig({\n  test: {\n    globals: true,\n    environment: 'jsdom',\n    setupFiles: ['src/test-setup.ts'],\n    include: ['**/*.spec.ts'],\  },\n});\n
